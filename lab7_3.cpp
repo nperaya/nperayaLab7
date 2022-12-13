@@ -1,6 +1,19 @@
 #include<iostream>
 
 using namespace std;
+#include<cmath>
+
+int adiff(int a, int b){
+   int X = abs(a-b);
+   while(X>=360){
+    X=X-360;
+   }
+  if (X>180){
+    X=360-X;
+  }
+
+  return X;
+}
 
 
 int main(){
